@@ -71,3 +71,22 @@ ChangeDisplay.prototype = {
     mainIdMember.settings.style.display = 'none';
   }
 };
+
+//////////////////////////////////////////////////////////////
+
+var CreateHtml = function() {}
+
+CreateHtml.prototype = {
+  create : function(tg, elem, text) {
+    //tg = ターゲットとなるid(document.getElementById()) / elem = 作成したいhtml要素 / msg = 入れたい内容
+    var _elem = document.createElement(elem); //elem要素を作成
+    let _text = document.createTextNode(text);
+
+    _elem.appendChild(_text);
+    tg.appendChild(_elem);
+  },
+  delete : function(tg) {
+    //tg = ターゲットとなるid(document.getElementById())
+    tg.removeChild(tg.lastChild);
+  }
+}

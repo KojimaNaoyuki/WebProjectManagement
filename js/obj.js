@@ -15,3 +15,8 @@ var mainIdMember = {
   document : document.getElementById('main_document'),
   settings : document.getElementById('main_settings')
 };
+
+var otherIdMember = {
+  msg : document.getElementById('msg'),
+  joinProject : document.getElementById('joinProject')
+}

@@ -5,6 +5,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     let sidevar = new SideVar();
     let changedisplay = new ChangeDisplay();
+    let createhtml = new CreateHtml();
 
     /////////////////////////////////////////////////////////////
 
@@ -13,8 +14,7 @@
 
     ////////////////////////////////////////////////////////////
 
-    //mainコンテンツのdisplayの初期化
-    changedisplay.init();
+    changedisplay.init(); //mainコンテンツのdisplayの初期化
 
     sideIdMember.home.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.home);
@@ -31,6 +31,24 @@
     sideIdMember.settings.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.settings);
     },false);
+
+    ////////////////////////////////////////////////////////////
+
+    otherIdMember.joinProject.addEventListener('click', function() {
+      this.classList.toggle('joinProjectClicked');
+      otherIdMember.msg.classList.toggle('msg_box');
+      createhtml.create(otherIdMember.msg, 'h3', 'あなたが参加できるプロジェクト');
+      createhtml.create(otherIdMember.msg, 'p', 'TJHS');
+
+      if((joinProjectClicked % 2) == 1) {
+        createhtml.delete(otherIdMember.msg);
+        createhtml.delete(otherIdMember.msg);
+        createhtml.delete(otherIdMember.msg);
+        createhtml.delete(otherIdMember.msg);
+      }
+
+      joinProjectClicked++;
+    }, false);
 
     ////////////////////////////////////////////////////////////
   }, false);
