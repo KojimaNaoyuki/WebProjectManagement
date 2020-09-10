@@ -5,6 +5,8 @@
     <title>Web Project Management</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/minutes.css">
+    <link rel="stylesheet" href="css/idead.css">
   </head>
   <body>
     <!-- ヘッダー -->
@@ -79,10 +81,20 @@
 
         <div id="main_minutes">
           <h2>MINUTES</h2>
+          <div id="minutes_thread"></div>
+          <form class="minutes_input_area" action="" method="post">
+            <textarea name="" rows="12" cols="80" placeholder="議事録を記入"></textarea>
+            <input type="submit" name="" value="送信" id="submit_minutes">
+          </form>
         </div>
 
         <div id="main_idead">
           <h2>IDEAD</h2>
+          <div id="idead_thread"></div>
+          <form class="idead_input_area" action="index.html" method="post">
+            <textarea name="" rows="12" cols="80" placeholder="アイデアを記入"></textarea>
+            <input type="submit" name="" value="送信" id="submit_idead">
+          </form>
         </div>
 
         <div id="main_document">
