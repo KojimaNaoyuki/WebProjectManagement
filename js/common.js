@@ -32,6 +32,17 @@
       changedisplay.changeOnOff(mainIdMember.settings);
     },false);
 
+    mainIdMember.fileBtn.addEventListener('click', function() {
+      changedisplay.changeOnOff(mainIdMember.fileDocument);
+      this.classList.toggle('current_file_url');
+      mainIdMember.urlBtn.classList.remove('current_file_url');
+    }, false);
+    mainIdMember.urlBtn.addEventListener('click', function() {
+      changedisplay.changeOnOff(mainIdMember.urlDocument);
+      this.classList.toggle('current_file_url');
+      mainIdMember.fileBtn.classList.remove('current_file_url');
+    }, false);
+
     ////////////////////////////////////////////////////////////
 
     otherIdMember.joinProject.addEventListener('click', function() {

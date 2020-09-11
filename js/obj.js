@@ -13,7 +13,12 @@ var mainIdMember = {
   minutes : document.getElementById('main_minutes'),
   idead : document.getElementById('main_idead'),
   document : document.getElementById('main_document'),
-  settings : document.getElementById('main_settings')
+  settings : document.getElementById('main_settings'),
+
+  fileDocument : document.getElementById('file_document'),
+  urlDocument : document.getElementById('url_document'),
+  fileBtn : document.getElementById('file_btn'),
+  urlBtn : document.getElementById('url_btn')
 };
 
 var otherIdMember = {

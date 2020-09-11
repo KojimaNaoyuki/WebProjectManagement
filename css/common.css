@@ -210,6 +210,7 @@ footer {
   text-align: center;
 }
 footer h3 {
+  margin: 0;
   line-height: 60px;
 
   font-size: 12px;

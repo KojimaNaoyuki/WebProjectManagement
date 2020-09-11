@@ -58,10 +58,19 @@ ChangeDisplay.prototype = {
         mainIdMember.minutes.style.display = 'none';
         mainIdMember.idead.style.display = 'none';
         mainIdMember.document.style.display = 'none';
+        break;
+      case mainIdMember.fileDocument :
+        mainIdMember.urlDocument.style.display = 'none';
+        break;
+      case mainIdMember.urlDocument :
+        mainIdMember.fileDocument.style.display = 'none';
+        break;
     }
 
     if(tg.style.display == 'none') {
       tg.style.display = 'block';
+    } else {
+      tg.style.display = 'none';
     }
   },
   init : function() {
@@ -69,6 +78,8 @@ ChangeDisplay.prototype = {
     mainIdMember.idead.style.display = 'none';
     mainIdMember.document.style.display = 'none';
     mainIdMember.settings.style.display = 'none';
+
+    mainIdMember.urlDocument.style.display = 'none';
   }
 };
 
