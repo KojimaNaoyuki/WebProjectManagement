@@ -178,6 +178,11 @@ header h2 {
       display: block;
     }
     /* ///////////main_homeコンテンツ/////////// */
+    /* ///////////main_joinコンテンツ/////////// */
+    #main_join {
+      display: block;
+    }
+    /* ///////////main_joinコンテンツ/////////// */
     /* ///////////main_minutesコンテンツ/////////// */
     #main_minutes {
       display: block;

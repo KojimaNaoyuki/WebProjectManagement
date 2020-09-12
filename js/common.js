@@ -19,6 +19,9 @@
     sideIdMember.home.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.home);
     },false);
+    sideIdMember.join.addEventListener('click', function() {
+      changedisplay.changeOnOff(mainIdMember.join);
+    }, false);
     sideIdMember.minutes.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.minutes);
     },false);
@@ -41,6 +44,15 @@
       changedisplay.changeOnOff(mainIdMember.urlDocument);
       this.classList.toggle('current_file_url');
       mainIdMember.fileBtn.classList.remove('current_file_url');
+    }, false);
+
+    mainIdMember.blackBtn.addEventListener('click', function() {
+      this.classList.toggle('color_change_box_current');
+      mainIdMember.whiteBtn.classList.remove('color_change_box_current');
+    }, false);
+    mainIdMember.whiteBtn.addEventListener('click', function() {
+      this.classList.toggle('color_change_box_current');
+      mainIdMember.blackBtn.classList.remove('color_change_box_current');
     }, false);
 
     ////////////////////////////////////////////////////////////

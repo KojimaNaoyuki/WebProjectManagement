@@ -5,9 +5,11 @@
     <title>Web Project Management</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/join.css">
     <link rel="stylesheet" href="css/minutes.css">
     <link rel="stylesheet" href="css/idead.css">
     <link rel="stylesheet" href="css/document.css">
+    <link rel="stylesheet" href="css/settings.css">
   </head>
   <body>
     <!-- ヘッダー -->
@@ -31,6 +33,7 @@
       <aside>
         <ul>
           <li class="current side" id="btn_home">HOME</li>
+          <li class="side" id="btn_join">JOIN</li>
           <li class="side" id="btn_minutes">MINUTES</li>
           <li class="side" id="btn_idead">IDEAD</li>
           <li class="side" id="btn_document">DOCUMENT</li>
@@ -80,6 +83,29 @@
           <div class="margin"></div>
         </div>
 
+        <div id="main_join">
+          <h2>JOIN</h2>
+          <h3>招待を受けているプロジェクト</h3>
+          <ul>
+            <li>TJHS</li>
+            <li>～～～～</li>
+            <li>～～～～</li>
+          </ul>
+          <h3>プロジェクトの参加メンバー</h3>
+          <p>～～～～</p>
+          <p>～～～～</p>
+          <p>～～～～</p>
+          <h3>招待コードを送る</h3>
+          <form class="" action="" method="post">
+            <dl>
+              <dt>USER ID</dt>
+              <dd><input type="text" name="" value="" placeholder="数字6桁"></dd>
+            </dl>
+            <input type="submit" name="" value="招待" id="submit_join">
+          </form>
+          <div class="margin"></div>
+        </div>
+
         <div id="main_minutes">
           <h2>MINUTES</h2>
           <div id="minutes_thread"></div>
@@ -106,7 +132,11 @@
           <div id="file_document">
             <div id="file_thread"></div>
             <form action="" method="post" enctype="multipart/form-data" class="up_area">
-              <input type="file" name="fname">
+              <dl>
+                <dt><input type="file" name="fname"></dt>
+                <dt>コメント</dt>
+                <dd><input type="text" name="" value=""></dd>
+              </dl>
               <input type="submit" value="アップロード">
             </form>
           </div>
@@ -127,6 +157,18 @@
 
         <div id="main_settings">
           <h2>SETTINGS</h2>
+          <form action="" method="post">
+            <dl>
+              <dt><h3 class="settings_text_box">Your User Id</h3></dt>
+              <dd><h3 class="settings_text_box">123456</h3></dd>
+              <dt><h3 class="settings_text_box">BackGroundColor</h3></dt>
+              <dd><h3 class="color_change_box color_change_box_current" id="black_btn">BLACK</h3><h3 class="color_change_box" id="white_btn">WHITE</h3></dd>
+              <dt><h3 class="settings_text_box">ChangeUserName</h3></dt>
+              <dd><h3 class="settings_text_box"><input type="text" name="" value="～～～"></h3></dd>
+            </dl>
+            <input type="submit" name="" value="設定" id="submit_settings">
+          </form>
+          <div class="margin"></div>
         </div>
 
       </section>
@@ -135,7 +177,7 @@
     <!-- wrapper -->
 
     <!-- フッター -->
-    <footer>
+    <footer id="footer">
       <h3>&copy;WebProjectManagement (2020)</h3>
     </footer>
     <!-- フッター -->

@@ -41,6 +41,9 @@
     margin-left: 20px;
     font-size: 1.4em;
   }
+  #file_document dt {
+    margin-right: 20px;
+  }
   /* ///////////file_document/////////// */
   /* ///////////url_document/////////// */
   #url_document {
