@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Project Management</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <h1>Web Project Management</h1>
+    </header>
+    <!-- ヘッダー -->
+
+    <div class="wrapper">
+      <!--ログイン-->
+      <section id=login class=login>
+        <h1>LOGIN</h1>
+        <form action="../php/login.php" method="post">
+          <p><input type="text" name="id" placeholder="ID" class=input></p>
+          <p><input type="password" name="password" placeholder="password" class=input></p>
+          <p><input type="submit" value="login" class=button></p>
+          <p><input type="button" value="Create new Account" class=button onclick="onCnA()"></p>
+        </form>
+        <div class="margin"></div>
+      </section>
+      <!--ログイン-->
+
+      <!--アカウント作成-->
+      <section id="create_acc" class="create_acc">
+        <h1>Create new Account</h1>
+        <form action="../php/login.php" method="post">
+          <p><input type="text" name="newID" placeholder="create ID" class=input></p>
+          <p><input type="password" name=newPassword_A placeholder="create password" class=input></p>
+          <p><input type="password" name=newPassword_B placeholder="password確認" class=input></p>
+          <p><input type="submit" value="create" class=button></p>
+        </form>
+      </section>
+      <!--アカウント作成-->
+    </div>
+
+
+    <script type="text/javascript"src="../js/login.js"></script>
+    </body>
+</html>
