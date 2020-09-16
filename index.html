@@ -46,13 +46,28 @@
 
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
+        let loginorcreate = new LoginOrCreate();
+
         document.getElementById('create_acc').style.display = 'none';
+
+        //index.phpの処理
+        indexIdMember.createBtn.addEventListener('click', function() {
+          loginorcreate.clickedCreate();
+        }, false);
+        indexIdMember.loginBtn.addEventListener('click', function() {
+          loginorcreate.clickedLogin();
+        }, false);
+        indexIdMember.createBtn2.addEventListener('click', function() {
+          loginorcreate.clickedCreate();
+        }, false);
+        indexIdMember.loginBtn2.addEventListener('click', function() {
+          loginorcreate.clickedLogin();
+        }, false);
       }, false);
     </script>
 
     <script type="text/javascript" src="js/obj.js"></script>
     <script type="text/javascript" src="js/fn.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
     </body>
 </html>
 
