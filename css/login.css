@@ -26,6 +26,10 @@
   border-radius: 10px;
   font-size: 15px;
 }
+
+#btn_login, #btn_login2 {
+  margin: 60px 30px 0 0;
+}
 /*/////// ログイン ///////*/
 
 /*///// アカウント作成 /////*/
@@ -40,5 +44,11 @@
 .create_acc h1{
   margin: 0 0 50px 0;
   font-size: 30px;
-  }
+}
+
+#btn_create, #btn_create2 {
+  margin: 60px 0 0 30px;
+}
 /*///// アカウント作成 /////*/
+
+/* The creator of this code is Itou Yuuma and Kojima Naoyuki */

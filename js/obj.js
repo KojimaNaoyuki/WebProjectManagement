@@ -1,5 +1,16 @@
 console.log('javascript(obj.js)');
 
+var indexIdMember = {
+  createBtn : document.getElementById('btn_create'),
+  loginBtn : document.getElementById('btn_login'),
+  createBtn2 : document.getElementById('btn_create2'),
+  loginBtn2 : document.getElementById('btn_login2'),
+  login : document.getElementById('login'),
+  create : document.getElementById('create_acc')
+};
+
+///////////////////////////////////////////////////////////////////////////
+
 var sideIdMember = {
   home : document.getElementById('btn_home'),
   join : document.getElementById('btn_join'),
@@ -31,3 +42,5 @@ var otherIdMember = {
   joinProject : document.getElementById('joinProject'),
   footer : document.getElementById('footer')
 };
+
+// The creator of this code is Kojima Naoyuki

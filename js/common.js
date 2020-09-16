@@ -3,9 +3,26 @@
   console.log('javascript(common.js)');
 
   document.addEventListener('DOMContentLoaded', function() {
+    let loginorcreate = new LoginOrCreate();
     let sidevar = new SideVar();
     let changedisplay = new ChangeDisplay();
     let createhtml = new CreateHtml();
+
+    /////////////////////////////////////////////////////////////
+
+    //index.phpの処理
+    indexIdMember.createBtn.addEventListener('click', function() {
+      loginorcreate.clickedCreate();
+    }, false);
+    indexIdMember.loginBtn.addEventListener('click', function() {
+      loginorcreate.clickedLogin();
+    }, false);
+    indexIdMember.createBtn2.addEventListener('click', function() {
+      loginorcreate.clickedCreate();
+    }, false);
+    indexIdMember.loginBtn2.addEventListener('click', function() {
+      loginorcreate.clickedLogin();
+    }, false);
 
     /////////////////////////////////////////////////////////////
 
@@ -18,7 +35,7 @@
 
     sideIdMember.home.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.home);
-    },false);
+    }, false);
     sideIdMember.join.addEventListener('click', function() {
       changedisplay.changeOnOff(mainIdMember.join);
     }, false);
@@ -77,3 +94,5 @@
   }, false);
 
 }).call(this);
+
+// The creator of this code is Kojima Naoyuki

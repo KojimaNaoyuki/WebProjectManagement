@@ -1,5 +1,22 @@
 console.log('javascript(fn.js)');
 
+var LoginOrCreate = function() {}
+
+LoginOrCreate.prototype = {
+  clickedLogin : function() {
+    //loginをクリック
+    indexIdMember.login.style.display = 'block';
+    indexIdMember.create.style.display = 'none';
+  },
+  clickedCreate : function() {
+    //createをクリック
+    indexIdMember.login.style.display = 'none';
+    indexIdMember.create.style.display = 'block';
+  }
+};
+
+//////////////////////////////////////////////////////////////
+
 var SideVar = function() {}
 
 SideVar.prototype = {
@@ -124,3 +141,5 @@ CreateHtml.prototype = {
     tg.removeChild(tg.lastChild);
   }
 }
+
+// The creator of this code is Kojima Naoyuki
